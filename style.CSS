@@ -1,0 +1,65 @@
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+.main-wrapper{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0%;
+}
+.action-wrapper{
+  padding: 30px 40px;
+}
+
+/* Style the header */
+.header {
+  background-color: rgb(110, 170, 170);
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.action-wrapper input{
+  font-size: 1rem;
+  padding: 10px;
+  border: rgb(112, 153, 153) 1px solid;
+}
+.action-wrapper button, .item-actions button{
+  padding: 12px;
+  background-color: rgb(139, 202, 202);
+  color: white;
+  font-weight: bolder;
+  border: solid 1px rgb(112, 153, 153);
+}
+.action-wrapper button:hover, .item-actions button:hover{
+  background-color: white;
+  color: black;
+  border: black 1px solid;
+  cursor: pointer;
+}
+.list-item{  
+  position: relative;
+  padding: 12px 50px 12px 50px;
+  background: #eee;
+  border: black 1px solid;
+  font-size: 18px;
+  transition: 0.2s;
+  
+}
+  
+.item-name{
+  padding: 10px;
+  font-size: 1.2rem;
+}
